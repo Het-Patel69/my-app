@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 import { Dropdown, Form, Button, FloatingLabel } from "react-bootstrap"
-function Footer() {
+import PropTypes from 'prop-types'
+function Footer(props) {
     return (
-        <div className="container-fluid bg-light p-3">
+        <div className={`container-fluid bg-${props.mode} p-3 ${props.mode}`}>
             <div id="form">
                 <Dropdown>
-                    <div className="d-flex justify-content-center">
+                    <div className={`d-flex justify-content-center`}>
                     <Dropdown.Toggle variant="success" id="dropdown-basic"  className="justify-content-center">
                         Submit your details
                     </Dropdown.Toggle>
@@ -47,7 +48,7 @@ function Footer() {
                     <p className="mx-3">Phone : +91-9157233711</p>
                     <p className="mx-3">Email : phet9429@gmail.com</p>
                 </div>
-                <p className="text-center text-muted">© 2022 | Het Patel</p>
+                <p className={`text-center ${props.mode}`}>© 2022 | Het Patel</p>
             </footer>
         </div>
     );

@@ -6,20 +6,23 @@ import insta from "../Icons/instagram.png"
 import twitter from "../Icons/twitter.png"
 import reddit from "../Icons/reddit.png"
 import github from "../Icons/github.png"
+import React, { useState } from 'react'
+import PropTypes from 'prop-types'
 
-function Header() {
+function Header(props) {
+  
     return (
-        <div>
-            {/* <div id="darkmode">
+        <div className={`${props.mode}`}>
+            <div id="darkmode">
                 <form>
                     <Form.Check
                         type="switch"
                         id="custom-switch"
                         label="Dark-Mode"
-                        onClick={changemode}
+                        onClick={props.toggleMode}
                     />
                 </form>
-            </div> */}
+            </div>
             <div className="pt-5 d-flex flex-column align-items-center">
                 <img id="self_img" src={avtar} width={175} alt="Het Patel" />
                 <h2 className="pt-3">Hello, There!</h2>
@@ -46,8 +49,8 @@ function Header() {
                     </div>
                 </a>
             </div>
-            <div className="navbarC m-4">
-                <Navbar id="menu" bg="light">
+            <div className="navbarC my-4">
+                <Navbar id="menu" bg={props.mode} variant={props.mode}>
                     {/* <Container> */}
                     {/* <Navbar.Brand as={Link} to={'/'} className='ms-2'>
                     <img src={logo} width={25} alt="logo" />Het Patel

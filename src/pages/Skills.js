@@ -1,10 +1,12 @@
 import React from "react";
+import PropTypes from 'prop-types'
 
-function Experience() {
+function Experience(props) {
     return (
         <React.Fragment>
-            <div className="min-h-screen container-fluid">
-                <div className="card my-3">
+            <div className={`${props.mode}`}>
+            <div className={`min-h-screen container-fluid ${props.mode}`}>
+                <div className={`card my-3 ${props.mode}`}>
                     <div className="card-body">
                         <h5 className="card-title fw-bold pb-3">Technical Skills</h5>
                         <div className="row">
@@ -64,6 +66,7 @@ function Experience() {
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </React.Fragment >
     );
