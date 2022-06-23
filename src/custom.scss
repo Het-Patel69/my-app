@@ -1,0 +1,23 @@
+// Override default variables before the import
+
+// scss-docs-start theme-colors-map
+$enable-rounded: false;
+
+// Import Bootstrap and its default variables
+@import "~bootstrap/scss/bootstrap.scss";
+
+@media (max-width: 576px) {
+  .d-mobile-block {
+    display: block !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .d-web-contents {
+    display: contents !important;
+  }
+}
+
+.min-h-screen {
+  min-height: 80vh;
+}
