@@ -23,7 +23,7 @@ function Header(props) {
                     />
                 </form>
             </div>
-            <div className="pt-5 d-flex flex-column align-items-center">
+            <div id="header_full" className="pt-5 d-flex flex-column align-items-center">
                 <img id="self_img" src={avtar} width={175} alt="Het Patel" />
                 <h2 className="pt-3">Hello, There!</h2>
                 <h5 className="text-center border-bottom pb-3">I'm Het Patel</h5>
@@ -49,7 +49,7 @@ function Header(props) {
                     </div>
                 </a>
             </div>
-            <div className="navbarC my-4">
+            <div className="navbarC mt-4 pb-4">
                 <Navbar id="menu" bg={props.mode} variant={props.mode}>
                     {/* <Container> */}
                     {/* <Navbar.Brand as={Link} to={'/'} className='ms-2'>

@@ -4,22 +4,12 @@ import Footer from "./Footer";
 import Header from "./Header";
 import { useState } from 'react'
 
-function Layout() {
-    const [mode, setMode] = useState('light');
-
-    const toggleMode = () => {
-      if (mode === 'light') {
-        setMode('dark');
-      }
-      else {
-        setMode('light');
-      }
-    }
+function Layout(props) {
     return (
         <React.Fragment>
-            <Header mode={mode} toggleMode={toggleMode}/>
-            <Outlet mode={mode}/>
-            <Footer mode={mode}/>
+            <Header mode={props.mode} toggleMode={props.toggleMode}/>
+            <Outlet mode={props.mode}/>
+            <Footer mode={props.mode}/>
         </React.Fragment>
     );
 }

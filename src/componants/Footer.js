@@ -46,7 +46,7 @@ function Footer(props) {
                 </ul> */}
                 <div id="contact" className="d-flex flex-wrap justify-content-center">
                     <p className="mx-3">Phone : +91-9157233711</p>
-                    <p className="mx-3">Email : phet9429@gmail.com</p>
+                    <p className="mx-3"><a href="mailto:phet9429@gmail.com"> Email : phet9429@gmail.com</a></p>
                 </div>
                 <p className={`text-center ${props.mode}`}>© 2022 | Het Patel</p>
             </footer>

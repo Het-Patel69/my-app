@@ -11,8 +11,8 @@ function Experience() {
                             <div className="card mb-5">
                                 <div className="card-body">
                                     <h5 className="card-title fw-bold">Intern <span className="h6">at Coding Gujju</span></h5>
-                                    <p className="mb-0">June 2022 - PRESENT</p>
-                                    <small>I'm curently working as an intern at Coding Gujju in Web Development</small>
+                                    <p className="mb-0">6 June 2022 - 26 June 2022</p>
+                                    <small>I've worked as an intern at Coding Gujju in Web Development and worked in technologies like HTML, CSS, Bootstrap, Javascript, jQuery and React.js</small>
                                 </div>
                             </div>
                         </div>

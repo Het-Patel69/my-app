@@ -18,14 +18,14 @@ function App() {
         setMode('light');
       }
     }
-  
+
   return (
     
   
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route path="/" element={<Home />} />
+        <Route path="/" element={<Layout mode={mode} toggleMode={toggleMode}/>}>
+          <Route path="/" element={<Home mode={mode}/>} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/education" element={<Education />} />
           <Route path="/Skills" element={<Skills mode={mode}/>} />
